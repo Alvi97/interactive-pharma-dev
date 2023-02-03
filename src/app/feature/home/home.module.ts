@@ -7,7 +7,11 @@ import {SharedModule} from "../../shared/shared.module";
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+    data:{
+      pageTitle:'Home'
+    },
+    pathMatch: 'full'
   }
 ];
 
