@@ -1,0 +1,101 @@
+<div class="center">
+    <div class="card p-3">
+        <div class="card-body">
+            <div class="wrapper">
+                <h3 class="card-title">Create your profile</h3>
+            </div>
+            <div class="wrapper" style="float: right;">
+                <button type="button" class="btn btn-success">Close</button>
+            </div>
+        </div>
+        <div>
+            <form [formGroup]="profileForm" (ngSubmit)="createProfile()">
+                <div class="form-group wrapper">
+                    <label for="exampleFormControlSelect1">Title</label>
+                    <select class="form-control select-form" id="exampleFormControlSelect1" formControlName="title">
+                        <option>...</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group wrapper">
+                    <label for="exampleFormControlSelect1">Location</label>
+                    <select class="form-control select-form" id="exampleFormControlSelect1" formControlName="location">
+                        <option>...</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin: 10px 20px 20px 20px">
+                    <label for="formGroupExampleInput">Full name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" formControlName="fullName">
+                </div>
+                <div class="form-group" style="margin: 10px 20px 20px 20px;">
+                    <label for="exampleFormControlSelect1">Seniority</label>
+                    <select class="form-control" id="exampleFormControlSelect1" formControlName="seniority">
+                        <option>...</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin: 10px 20px 20px 20px;">
+                    <label for="exampleFormControlSelect1">Speciality</label>
+                    <select class="form-control" id="exampleFormControlSelect1" formControlName="speciality">
+                        <option>...</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin: 10px 20px 20px 20px">
+                    <label for="formGroupExampleInput">Place of work</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" formControlName="placeOfWork">
+                </div>
+                <div class="form-group wrapper">
+                    <label for="formGroupExampleInput">Email Address</label>
+                    <input type="email" class="form-control" id="formGroupExampleInput" formControlName="email">
+                </div>
+                <div class="form-group wrapper">
+                    <label for="formGroupExampleInput">Mobile Number</label>
+                    <input type="number" class="form-control" id="formGroupExampleInput" formControlName="mobileNumber">
+                </div>
+                <div class="form-group" style="margin: 10px 20px 20px 20px">
+                    <label for="formGroupExampleInput">Research interests</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput"
+                        formControlName="researchInterests">
+                </div>
+                <div class="form-group" style="margin: 10px 20px 20px 20px">
+                    <label for="formGroupExampleInput">Previous speaker experiences</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput"
+                        formControlName="previousSpeakerExperiences">
+                </div>
+                <div class="form-group" style="margin: 10px 20px 20px 20px">
+                    <label for="formGroupExampleInput">Languages</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" formControlName="languages">
+                </div>
+                <div class="wrapper">
+                    <button type="button" class="btn btn-light">Upload Photo</button>
+                </div>
+                <div class="wrapper">
+                    <button type="button" class="btn btn-light">Upload Biography</button>
+                </div>
+                <div class="wrapper">
+                    <button type="button" class="btn btn-light">Upload CV</button>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary" style="width: 90%;margin: 20px;">
+                        Create Profile
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
