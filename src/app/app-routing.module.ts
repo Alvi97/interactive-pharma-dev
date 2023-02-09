@@ -13,6 +13,10 @@ const routes: Routes = [
     loadChildren: () => import('./feature/pages/registration-and-profiling/registration-and-profiling.module').then(m => m.RegistrationAndProfilingModule),
   },
   {
+    path: 'complete-profile',
+    loadChildren: () => import('./feature/pages/profile-screen/profile-screen.module').then(m => m.ProfileScreenModule),
+  },
+  {
     path: '**', pathMatch: 'full', redirectTo: ''
   }
 ];

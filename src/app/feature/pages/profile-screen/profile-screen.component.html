@@ -1,0 +1,145 @@
+<div class="center">
+    <div class="card p-3">
+        <div class="card-body">
+            <div class="wrapper">
+                <h3 class="card-title">Create your profile</h3>
+            </div>
+            <div class="wrapper close-btn" style="float: right;">
+                <button type="button" class="btn btn-success">
+                    Close</button><i class="bi bi-x"></i>
+            </div>
+        </div>
+
+        <form [formGroup]="profileForm" (ngSubmit)="createProfile()">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6">
+                    
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Country</label>
+                                <select class="form-control form-select" id="exampleFormControlSelect1"
+                                    formControlName="country">
+                                    <option>...</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">First Name</label>
+                                <select class="form-control form-select" id="exampleFormControlSelect1"
+                                    formControlName="firstName">
+                                    <option>...</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Title</label>
+                                <select class="form-control form-select" id="exampleFormControlSelect1"
+                                    formControlName="title">
+                                    <option>...</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Last Name</label>
+                                <select class="form-control form-select" id="exampleFormControlSelect1"
+                                    formControlName="lastName">
+                                    <option>...</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Senority</label>
+                        <input type="text" class="form-control form-select" id="formGroupExampleInput" formControlName="seniority">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Speciality</label>
+                        <select class="form-control form-select" id="exampleFormControlSelect1"
+                            formControlName="speciality">
+                            <option>...</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Place of work</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput"
+                            formControlName="placeOfWork">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group ">
+                                <label for="formGroupExampleInput">Email Address</label>
+                                <input type="email" class="form-control" id="formGroupExampleInput"
+                                    formControlName="email">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group ">
+                                <label for="formGroupExampleInput">Mobile Number</label>
+                                <input type="number" class="form-control" id="formGroupExampleInput"
+                                    formControlName="mobileNumber">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Research interests</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput"
+                            formControlName="researchInterests">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Previous speaker experiences</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput"
+                            formControlName="previousSpeakerExperiences">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+
+                    <div class="form-group" style="margin: 18px 20px 20px 20px">
+                        <label for="formGroupExampleInput">Languages</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" formControlName="languages">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Biografy</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" formControlName="biografy">
+                    </div>
+                    <div class="group-button flex-wrap">
+                        <div class="wrapper">
+                            <button type="button" class="btn btn-light">Upload Photo</button>
+                        </div>
+
+                        <div class="wrapper">
+                            <button type="button" class="btn btn-light form-control-file">Upload CV</button>
+                        </div>
+                    </div>
+                    <div class="p2">
+                        <button type="submit" class="btn btn-primary" style="width: 91%;margin: 20px;">
+                            Confirm Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
