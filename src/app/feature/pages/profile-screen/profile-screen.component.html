@@ -1,12 +1,11 @@
 <div class="center">
     <div class="card p-3">
-        <div class="card-body">
+        <div class="">
             <div class="wrapper">
-                <h3 class="card-title">Create your profile</h3>
+                <h3 class="card-title">Create Profile</h3>
             </div>
             <div class="wrapper close-btn" style="float: right;">
-                <button type="button" class="btn btn-success">
-                    Close</button><i class="bi bi-x"></i>
+                <button type="button" class="btn btn-success">Close</button><i class="bi bi-x"></i>
             </div>
         </div>
 
@@ -15,7 +14,7 @@
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-lg-6">
-                    
+
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Country</label>
                                 <select class="form-control form-select" id="exampleFormControlSelect1"
@@ -50,6 +49,13 @@
                                     <option>4</option>
                                     <option>5</option>
                                 </select>
+
+                              <!-- <mat-select-country appearance="outline"
+                              label="Country"
+                              class="className"
+                              formControlName="country"
+                              (onCountrySelected)="onCountrySelected($event)">
+                              </mat-select-country> -->
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Last Name</label>
@@ -67,7 +73,14 @@
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput">Senority</label>
-                        <input type="text" class="form-control form-select" id="formGroupExampleInput" formControlName="seniority">
+                        <select class="form-control form-select" id="exampleFormControlSelect1"
+                            formControlName="seniority">
+                            <option>...</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
                     </div>
 
                     <div class="form-group">
@@ -115,21 +128,25 @@
                 </div>
                 <div class="col-lg-6">
 
-                    <div class="form-group" style="margin: 18px 20px 20px 20px">
+                    <div class="form-group">
                         <label for="formGroupExampleInput">Languages</label>
                         <input type="text" class="form-control" id="formGroupExampleInput" formControlName="languages">
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput">Biografy</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" formControlName="biografy">
+                        <textarea class="form-control" id="formGroupExampleInput" formControlName="biografy"
+                            rows="4"></textarea>
                     </div>
-                    <div class="group-button flex-wrap">
-                        <div class="wrapper">
-                            <button type="button" class="btn btn-light">Upload Photo</button>
+                    <div class="flex-wrap  group-button">
+
+                        <div class="fileUpload btn btn-light">
+                            <span>Upload Photo</span>
+                            <input id="uploadBtn" type="file" class="upload" />
                         </div>
 
-                        <div class="wrapper">
-                            <button type="button" class="btn btn-light form-control-file">Upload CV</button>
+                        <div class=" fileUpload btn btn-light">
+                            <span>Upload Cv</span>
+                            <input id="uploadBtn" type="file" class="upload" />
                         </div>
                     </div>
                     <div class="p2">

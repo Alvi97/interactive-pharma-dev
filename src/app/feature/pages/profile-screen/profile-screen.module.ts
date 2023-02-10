@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfileScreenComponent } from './profile-screen.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 const routes: Routes = [
   { path:'',
     data:{
@@ -19,9 +18,11 @@ const routes: Routes = [
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    
-    RouterModule.forChild(routes)
+  
+    RouterModule.forChild(routes),
 
-  ]
+  ],
+  exports:[]
+
 })
 export class ProfileScreenModule { }

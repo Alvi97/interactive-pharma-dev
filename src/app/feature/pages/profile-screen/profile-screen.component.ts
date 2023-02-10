@@ -1,5 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-profile-screen',
@@ -27,11 +28,29 @@ export class ProfileScreenComponent {
 
   });
 
-  constructor() { }
 
-  ngOnInit() {
-
+  constructor(private http: HttpClient,) {
+    // this.angulartics2GoogleAnalytics.startTracking();
   }
+
+    ngOnInit(): void {
+
+  
+      // this.profileForm.get('country').valueChanges
+      // .subscribe(country => console
+      // .log('this.profileForm.get("country").valueChanges', country));
+      
+      //     this.countryFormControl.valueChanges
+      // .subscribe(country => console
+      // .log('this.countryFormControl.valueChanges', country));
+        }
+      
+  
+    // onCountrySelected($event: Country) {
+    //   console.log($event);
+    // }
+  
+    
   createProfile() {
     console.log(this.profileForm.value);
   }
