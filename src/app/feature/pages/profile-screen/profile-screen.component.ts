@@ -1,3 +1,4 @@
+import { Country } from '@angular-material-extensions/select-country';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
@@ -30,28 +31,20 @@ export class ProfileScreenComponent {
 
 
   constructor(private http: HttpClient,) {
-    // this.angulartics2GoogleAnalytics.startTracking();
+
   }
 
     ngOnInit(): void {
-
   
-      // this.profileForm.get('country').valueChanges
-      // .subscribe(country => console
-      // .log('this.profileForm.get("country").valueChanges', country));
-      
-      //     this.countryFormControl.valueChanges
-      // .subscribe(country => console
-      // .log('this.countryFormControl.valueChanges', country));
         }
       
   
-    // onCountrySelected($event: Country) {
-    //   console.log($event);
-    // }
-  
-    
-  createProfile() {
-    console.log(this.profileForm.value);
-  }
+        onCountrySelected($event: Country) {
+          
+          console.log("hoiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii",$event);
+        }
+         
+       createProfile() {
+         console.log(this.profileForm.value);
+       }
 }
