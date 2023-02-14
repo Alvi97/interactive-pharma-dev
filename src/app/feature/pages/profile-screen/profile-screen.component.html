@@ -14,34 +14,26 @@
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-lg-6">
-
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Country</label>
-                                <!-- <select class="form-control form-select" id="exampleFormControlSelect1"
+                                <select class="form-control form-select" id="exampleFormControlSelect1"
                                     formControlName="country">
                                     <option>...</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
                                     <option>5</option>
-                                </select> -->
-                            <mat-select-country
-                              appearance="outline"
-                              class="className"
-                              formControlName="country"
-                              (onCountrySelected)="onCountrySelected($event)">
-                              </mat-select-country>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">First Name</label>
-                                <select class="form-control form-select" id="exampleFormControlSelect1"
-                                    formControlName="firstName">
-                                    <option>...</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
                                 </select>
+                                <!-- <mat-select-country
+                                 class=""
+                                 formControlName="country"
+                                 (onCountrySelected)="onCountrySelected($event)">
+                                 </mat-select-country> -->
+                            </div>
+                            <div class="form-group ">
+                                <label for="formGroupExampleInput">First Name</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    formControlName="firstName">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -56,7 +48,7 @@
                                     <option>5</option>
                                 </select>
 
-                 
+
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Last Name</label>
@@ -116,42 +108,70 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput">Research interests</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput"
-                            formControlName="researchInterests">
+
+                   
+                        <div class="form-group">
+                            <div class="row ">
+                            <label for="formGroupExampleInput">Research Interests</label>
+                            <div class="col-lg-4 py-2"><input type="text" class="form-control col-lg-4"
+                                    id="formGroupExampleInput" formControlName="researchInterests"></div>
+                            <div class="col-lg-4 py-2"> <input type="text" class="form-control col-lg-4"
+                                    id="formGroupExampleInput" formControlName="researchInterests"></div>
+                            <div class="col-lg-4 py-2"> <input type="text" class="form-control col-lg-4"
+                                    id="formGroupExampleInput" formControlName="researchInterests"></div>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="formGroupExampleInput">Previous speaker experiences</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput"
-                            formControlName="previousSpeakerExperiences">
+                        <div class="row">
+                        <label for="formGroupExampleInput">Previous Speaker Experiences</label>
+                        <div class="col-lg-4 py-2"><input type="text" class="form-control col-lg-4"
+                                id="formGroupExampleInput" formControlName="previousSpeakerExperiences"></div>
+                        <div class="col-lg-4 py-2"> <input type="text" class="form-control col-lg-4"
+                                id="formGroupExampleInput" formControlName="previousSpeakerExperiences"></div>
+                        <div class="col-lg-4 py-2"> <input type="text" class="form-control col-lg-4"
+                                id="formGroupExampleInput" formControlName="previousSpeakerExperiences"></div>
                     </div>
                 </div>
+                </div>
+
                 <div class="col-lg-6">
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label for="formGroupExampleInput">Languages</label>
                         <input type="text" class="form-control" id="formGroupExampleInput" formControlName="languages">
-                    </div>
+                    </div> -->
                     <div class="form-group">
-                        <label for="formGroupExampleInput">Biografy</label>
+                        <label for="formGroupExampleInput">Languages</label>
+                        <select class="form-control form-select" id="exampleFormControlSelect1" style="width: 50%;"
+                            formControlName="languages">
+                            <option>...</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Biografy</label><span class="p-1 bio-subtitle">400 word count</span>
                         <textarea class="form-control" id="formGroupExampleInput" formControlName="biografy"
                             rows="4"></textarea>
                     </div>
-                    <div class="flex-wrap  group-button">
-
-                        <div class="fileUpload btn btn-light">
-                            <span>Upload Photo</span>
+                    <div class="flex-wrap group-button">
+                        <!-- <span style="">ggggggg</span> -->
+                        <div class="fileUpload btn btn-light"> 
+                            <span class="upload">Upload Photo</span>
                             <input id="uploadBtn" type="file" class="upload" />
                         </div>
-
+                        <!-- <span>ggggggg</span> -->
                         <div class=" fileUpload btn btn-light">
-                            <span>Upload Cv</span>
+                            <span class="upload">Upload Cv</span>
                             <input id="uploadBtn" type="file" class="upload" />
                         </div>
                     </div>
-                    <div class="p2">
-                        <button type="submit" class="btn btn-primary" style="width: 91%;margin: 20px;">
+                    <div class="p-2">
+                        <button type="submit" class="upload btn btn-primary"
+                            style="width: 91%;margin: 20px; height: 45px;">
                             Confirm Profile
                         </button>
                     </div>

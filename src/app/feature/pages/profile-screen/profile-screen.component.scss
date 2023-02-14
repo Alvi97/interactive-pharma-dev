@@ -1,73 +1,104 @@
 .card {
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
-    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
-    cursor: pointer;
-    width: fit-content;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+  width: fit-content;
+}
+
+.card-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #1D3158;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1d3158;
 }
 
 .wrapper {
-    display: inline-block;
-    margin: 20px;
+  display: inline-block;
+  margin: 20px;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .select-form {
-    width: 200px;
+  width: 210px !important;
 }
 
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:visited {
-    background-color: #1d2f59 !important;
-    
+  background-color: #1D3158;
 }
 
 .btn-success,
 .btn-success:hover,
 .btn-success:active,
 .btn-success:visited {
-    background-color: #4b9382 !important;
+  background-color: #66beaa !important;
 }
 
-.group-button{
-    display: flex;
-    justify-content: space-around;
-    
+.group-button {
+  display: flex;
+  justify-content: space-around;
 }
-.btn-light{
-    width: 170px;
-    margin:  10px 10px 10px 10px;
 
+.btn-light {
+  width: 140px;
+  margin: 10px 10px 10px 10px;
+  background-color: #66beaa;
 }
-.form-group{
-   margin:  10px 20px 20px 20px;
-   ;
+
+.bio-subtitle {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.form-group {
+  margin: 10px 20px 20px 20px;
+}
+
+.upload {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
 }
 
 @media (max-width: 400px) {
-    .close-btn {
-      float: left!important;
-    }
+  .close-btn {
+    float: left !important;
   }
-  
-  textarea{
-    height: 425px;
-  }
-  .fileUpload {
-    position: relative;
-    overflow: hidden;
-  }
+}
+
+textarea {
+  height: 413px;
+}
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+}
 
 .fileUpload input.upload {
-    position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    filter: alpha(opacity=0);
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
