@@ -72,16 +72,14 @@ color: #1D3158;
 
 @media(max-width: 420px) {
   
-  .subtitle{
+ 
+
+  h6{
+    font-size: 40px;
     float: left;
   }
 
-  h6{
-    font-size: 30px;
-    float: left;
-  }
-  
   .join-btn {
-      width: 200px  ;
+      width: 300px  ;
   }
 }
