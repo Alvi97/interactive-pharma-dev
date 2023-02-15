@@ -35,21 +35,13 @@ h6 {
   width: 100%;
   background: #ffffff;
   mix-blend-mode: normal;
-  opacity: 0.8;
   height: 376px;
   top: 250px;
   border-radius: 0px;
+  background: rgba(255,255,255, 0.5)
 }
-
 .section2-content {
-  &::before {
-    opacity: unset;
-
- 
-  }
- 
   flex-wrap: wrap;
-  opacity: unset !important;
   align-items: center !important;
   justify-content: center !important;
 
