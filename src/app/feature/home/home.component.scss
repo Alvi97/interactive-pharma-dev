@@ -17,20 +17,18 @@ h6 {
   text-align: left;
 }
 
-// .hi{
-//   justify-content: center!important;
-//   align-items: center!important;
-// }
 
 .join-btn {
   height: 44px;
   width: 382px;
   background: #66beaa;
+  box-shadow: none;
   border-radius: 4px;
   border-color: #66beaa;
+  flex-wrap: wrap;
 }
 
-.section2 {
+.content-bg {
   position: absolute;
   width: 100%;
   background: #ffffff;
@@ -38,17 +36,15 @@ h6 {
   height: 376px;
   top: 250px;
   border-radius: 0px;
-  background: rgba(255,255,255, 0.5)
+  background: rgba(255, 255, 255, 0.5);
 }
-.section2-content {
+.home-content {
   flex-wrap: wrap;
   align-items: center !important;
   justify-content: center !important;
-
+  
+color: #1D3158;
 }
-
-
-
 
 .home-descr {
   font-family: Helvetica;
@@ -66,10 +62,9 @@ h6 {
   justify-content: center;
   height: 340px;
   flex-wrap: wrap;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 12px;
-  color: #1D1D1B;
+  color: #1d1d1b;
 }
-
