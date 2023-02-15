@@ -2,22 +2,33 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: #1D3158;
-  position:absolute;
+  position:relative;
   
 }
-.subtitle {
-  font-size: 11px;
-}
+
 a:link {
   text-decoration: none;
 }
-
-.list-unstyled{
-    font-size: 12px;
+.title{
+  font-size: 25px;
 }
+.list-unstyled{
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;}
 
 .subtitle{
-    align-items: center!important;
+align-items: center!important;
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+
+color: #FFFFFF;
 }
 
   .text-content{
