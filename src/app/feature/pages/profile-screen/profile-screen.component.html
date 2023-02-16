@@ -5,7 +5,7 @@
                 <h3 class="card-title">Create Profile</h3>
             </div>
             <div class="wrapper close-btn" style="float: right;">
-                <i class="bi bi-x"></i>  <button type="button" class="button-close btn btn-success ">Close</button>
+                 <button type="button" class="button-close btn btn-success "><i class="bi bi-x-lg p-1"></i>Close</button>
             </div>
         </div>
 
@@ -16,7 +16,7 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Country</label>
-                                <select class="form-control form-select" id="exampleFormControlSelect1"
+                           <select class="form-control form-select" id="exampleFormControlSelect1"
                                     formControlName="country">
                                     <option>...</option>
                                     <option>2</option>
@@ -25,10 +25,11 @@
                                     <option>5</option>
                                 </select>
                                 <!-- <mat-select-country
+                                 appearance="outline"
                                  class=""
                                  formControlName="country"
                                  (onCountrySelected)="onCountrySelected($event)">
-                                 </mat-select-country> -->
+                                </mat-select-country> -->
                             </div>
                             <div class="form-group ">
                                 <label for="formGroupExampleInput">First Name</label>
@@ -135,11 +136,6 @@
                 </div>
 
                 <div class="col-lg-6">
-
-                    <!-- <div class="form-group">
-                        <label for="formGroupExampleInput">Languages</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" formControlName="languages">
-                    </div> -->
                     <div class="form-group">
                         <label for="formGroupExampleInput">Languages</label>
                         <select class="form-control form-select" id="exampleFormControlSelect1" style="width: 50%;"
@@ -157,21 +153,23 @@
                         <textarea class="form-control" id="formGroupExampleInput" formControlName="biografy"
                             rows="4"></textarea>
                     </div>
+                    <div class="group-button flex-wrap "> 
+                    <span>Photo 500 x 500 pixels</span>
+                    <span>Cv PDF document</span>
+                    </div>
                     <div class="flex-wrap group-button">
-                        <!-- <span style="">ggggggg</span> -->
                         <div class="fileUpload btn btn-light"> 
                             <span class="upload">Upload</span>
                             <input id="uploadBtn" type="file" class="upload"/>
                         </div>
-                        <!-- <span>ggggggg</span> -->
                         <div class=" fileUpload btn btn-light">
                             <span class="upload">Upload</span>
                             <input id="uploadBtn" type="file" class="upload"/>
                         </div>
                     </div>
-                    <div class="p-2">
-                        <button type="submit" class="upload btn btn-primary"
-                            style="width: 92% ;margin: 20px; height: 45px;">
+                    <div class="p-2 d-flex">
+                        <button type="submit" class="confirm-btn btn btn-primary"
+                            style="margin: 20px">
                             Confirm Profile
                         </button>
                     </div>

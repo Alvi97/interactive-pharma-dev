@@ -8,7 +8,12 @@
   cursor: pointer;
   width: fit-content;
 }
-
+.mat-mdc-text-field-wrapper {
+  height: 47px !important;
+}
+.mat-mdc-form-field-flex {
+  height: 39px !important;
+}
 .card-title {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -48,10 +53,19 @@ label {
 .group-button {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #1d3158;
 }
 
 .btn-light {
-   width: 122px;
+  width: 122px;
   border-radius: 6px;
   margin: 10px 10px 10px 10px;
   background-color: #66beaa;
@@ -77,10 +91,14 @@ label {
   color: #ffffff;
 }
 .button-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #66beaa;
   border-color: #66beaa;
-  height: 30px !important;
-  width: 74px !important;
+  height: 31px !important;
+  width: 75px !important;
+  padding: unset;
   border-radius: 6px !important;
   font-family: Helvetica;
   font-size: 14px;
@@ -93,6 +111,12 @@ label {
   .close-btn {
     float: left !important;
   }
+  .btn-light {
+    width: 100px;
+  }
+  .group-button {
+    font-size: 11px;
+  }
 }
 
 textarea {
@@ -101,6 +125,18 @@ textarea {
 .fileUpload {
   position: relative;
   overflow: hidden;
+}
+
+.confirm-btn {
+  height: 46px;
+  width: 100%;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #ffffff;
 }
 
 .fileUpload input.upload {

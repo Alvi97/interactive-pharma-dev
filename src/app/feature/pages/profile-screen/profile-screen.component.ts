@@ -35,12 +35,10 @@ export class ProfileScreenComponent {
   }
 
     ngOnInit(): void {
-  
         }
       
   
-        onCountrySelected($event: Country) {
-          
+        onCountrySelected($event: Country) {         
           console.log("hoiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii",$event);
         }
          
