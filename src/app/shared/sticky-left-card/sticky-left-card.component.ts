@@ -10,6 +10,15 @@ import { Component, ViewChild, AfterViewInit } from '@angular/core';
 export class StickyLeftCardComponent {
   @ViewChild('datepicker') datepicker: any;
 
+  // ngAfterViewInit() {
+  //   const datepicker = new Datepicker(this.datepicker.nativeElement);
+  //   datepicker.show();
+  // }
+   
+
+
+
+
 
 
 
