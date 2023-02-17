@@ -1,0 +1,60 @@
+.card {
+  height: 395px;
+  width: 400px;
+}
+
+.card-title {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.card-img-top {
+  width: 367px;
+  height: 125px;
+}
+
+.gray-btn {
+  height: 32px;
+  width: 271px;
+  background: rgba(29, 49, 88, 0.2);
+  border: rgba(29, 49, 88, 0.2);
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1d3158;
+}
+
+.green-btn {
+  height: 32px;
+  width: 102px;
+  background: #66beaa;
+  border: #66beaa;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.view-btn {
+  height: 44px;
+  width: 400px;
+  background: rgba(29, 49, 88, 0.7);
+  border: rgba(29, 49, 88, 0.7);
+}
+
+.card-header {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #1d3158;
+}
