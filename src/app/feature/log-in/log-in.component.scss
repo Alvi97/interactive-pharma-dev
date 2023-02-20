@@ -3,6 +3,28 @@ height: 504px;
 width: 523px;
 left: 447.5px;
 top: 339.400390625px;
-border-radius: 0px;
+border-radius: 3px;
 background-color:red;
+}
+
+.form-body {
+    padding-top: 20%;
+}
+
+.form-control{
+height: 42px;
+width: 461px;
+
+}
+label{
+    font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+
+color: #1D3158;
+
 }
