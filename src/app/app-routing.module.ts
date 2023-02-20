@@ -18,6 +18,11 @@ const routes: Routes = [
     loadChildren: () => import('./feature/registration-and-profiling/registration-and-profiling.module').then(m => m.RegistrationAndProfilingModule),
   },
   {
+    path: 'log-in',
+    loadChildren: () => import('./feature/log-in/login.module').then(m => m.LoginModule),
+    // canActivate: [ AuthGuard ],
+  },
+  {
     path: '**', pathMatch: 'full', redirectTo: ''
   }
 ];
