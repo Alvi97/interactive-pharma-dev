@@ -8,7 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 const routes: Routes = [
   { path:'',
     data:{
-      pageTitle:'complete-profile'
+      pageTitle:'Complete Profile'
     },
     component: ProfileScreenComponent
   }
