@@ -22,14 +22,9 @@ export class LogInComponent {
 
     ngOnInit(): void {
         }
-      
   
-        // onCountrySelected($event: Country) {         
-        //   console.log("hoiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii",$event);
-        // }
-         
-       createProfile() {
-         console.log(this.loginForm.value);
+       createLogin() {
+         console.log("login",this.loginForm.value);
        }
 
 }
