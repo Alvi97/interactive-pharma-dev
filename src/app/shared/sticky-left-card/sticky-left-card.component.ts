@@ -1,4 +1,6 @@
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
+import {Component, ElementRef, EventEmitter, Input, Output, ViewChild, ViewEncapsulation} from '@angular/core';
+// import {MatDatepicker} from '@angular/material/datepicker';
+import {MatDatepickerInputEvent} from '@angular/material/datepicker';
 
 
 
@@ -8,22 +10,12 @@ import { Component, ViewChild, AfterViewInit } from '@angular/core';
   styleUrls: ['./sticky-left-card.component.scss']
 })
 export class StickyLeftCardComponent {
-  @ViewChild('datepicker') datepicker: any;
-
-  // ngAfterViewInit() {
-  //   const datepicker = new Datepicker(this.datepicker.nativeElement);
-  //   datepicker.show();
+  selected: Date | null | undefined;
+  // @ViewChild('keepOpen') _input: ElementRef | undefined;
+  // _openCalendar(picker: MatDatepicker<Date>) {
+  //   picker.open();
   // }
-   
 
-
-
-
-
-
-
-
-
-
+  selectedMonth = 'option2';
 
 }

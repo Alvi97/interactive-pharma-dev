@@ -7,6 +7,7 @@ import {SharedModule} from "./shared/shared.module";
 import {CoreModule} from "./core/core.module";
 import { LoginModule } from './feature/log-in/login.module';
 import { RegistrationAndProfilingComponent } from './feature/registration-and-profiling/registration-and-profiling.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RegistrationAndProfilingComponent } from './feature/registration-and-pr
     SharedModule,
     CoreModule,
     LoginModule,
+    BrowserAnimationsModule,
     
   ],
   providers: [],

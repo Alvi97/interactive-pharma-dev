@@ -48,8 +48,20 @@
                 <div class="card-title">DIARY</div>
                 <div class="mb-2">Availability in:</div>
                 <div class="form-floating mb-3">
-                    <input type="date" class="form-control" id="dateInput" placeholder="Select date"> <label
-                        for="dateInput">Date</label>
+                        <!-- <mat-form-field appearance="fill">
+                            <mat-label>Select month</mat-label>
+                            <mat-select [(value)]="selectedMonth">
+                              <mat-option>None</mat-option>
+                              <mat-option value="option1">Janury</mat-option>
+                              <mat-option value="option2">February </mat-option>
+                              <mat-option value="option3"> March</mat-option>
+                            </mat-select>
+                          </mat-form-field> -->
+                    <mat-card class="demo-inline-calendar-card">
+                        <mat-calendar [(selected)]="selected"></mat-calendar>
+                    </mat-card>
+
+
                 </div>
             </div>
             <hr>
