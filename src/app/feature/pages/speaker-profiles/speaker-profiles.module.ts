@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
-import { RegistrationAndProfilingComponent } from './registration-and-profiling.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SpeakerProfilesComponent } from './speaker-profiles.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: RegistrationAndProfilingComponent
+    component: SpeakerProfilesComponent
   }
 ];
 
 @NgModule({
   declarations: [
-    RegistrationAndProfilingComponent,
+    SpeakerProfilesComponent,
   ],
   imports: [
     CommonModule,
@@ -23,4 +23,4 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ]
 })
-export class RegistrationAndProfilingModule { }
+export class SpeakerProfilesModule { }
