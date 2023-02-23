@@ -18,6 +18,10 @@ const routes: Routes = [
     loadChildren: () => import('./feature/registration-and-profiling/registration-and-profiling.module').then(m => m.RegistrationAndProfilingModule),
   },
   {
+      path: 'forgot-password',
+      loadChildren: () => import('./feature/change-password/change-password.module').then(m => m.ChangePasswordModule),
+    },
+  {
     path: '**', pathMatch: 'full', redirectTo: ''
   }
 ];
