@@ -9,12 +9,17 @@ const routes: Routes = [
     // canActivate: [ AuthGuard ],
   },
   {
+    path: 'landing-page',
+    loadChildren: () => import('./feature/landing-page/landing-page.module').then(m => m.LandingPageModule),
+    // canActivate: [ AuthGuard ],
+  },
+  {
     path: 'register',
-    loadChildren: () => import('./feature/pages/registration-and-profiling/registration-and-profiling.module').then(m => m.RegistrationAndProfilingModule),
+    loadChildren: () => import('./feature/registration-and-profiling/registration-and-profiling.module').then(m => m.RegistrationAndProfilingModule),
   },
   {
     path: 'complete-profile',
-    loadChildren: () => import('./feature/pages/profile-screen/profile-screen.module').then(m => m.ProfileScreenModule),
+    loadChildren: () => import('./feature/profile-screen/profile-screen.module').then(m => m.ProfileScreenModule),
   },
   {
     path: '**', pathMatch: 'full', redirectTo: ''

@@ -9,7 +9,7 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     data:{
-      pageTitle:'Home'
+      pageTitle:''
     },
     pathMatch: 'full'
   }

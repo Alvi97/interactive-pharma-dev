@@ -16,14 +16,14 @@ const routes: Routes = [
 
 
 @NgModule({
-  declarations: [],
+  declarations:
+   [ProfileScreenComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
     MatSelectCountryModule.forRoot('de'),
     RouterModule.forChild(routes),
-
   ],
   exports:[]
 
