@@ -18,7 +18,6 @@ import { LandingPageModule } from './feature/landing-page/landing-page.module';
     AppRoutingModule,
     SharedModule,
     CoreModule,
-    LoginModule,
     LandingPageModule,
     FormsModule,
     ReactiveFormsModule
