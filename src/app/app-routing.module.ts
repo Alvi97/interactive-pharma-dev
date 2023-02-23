@@ -18,6 +18,10 @@ const routes: Routes = [
     loadChildren: () => import('./feature/registration-and-profiling/registration-and-profiling.module').then(m => m.RegistrationAndProfilingModule),
   },
   {
+    path: 'complete-profile',
+    loadChildren: () => import('./feature/profile-screen/profile-screen.module').then(m => m.ProfileScreenModule),
+  },
+  {
     path: '**', pathMatch: 'full', redirectTo: ''
   }
 ];
