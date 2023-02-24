@@ -7,19 +7,21 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./registration-and-profiling.component.scss']
 })
 export class RegistrationAndProfilingComponent implements OnInit {
-
+  public showPassword: boolean = false;
+  public showConfirmPassword: boolean = false;
   profileForm = new FormGroup({
     title: new FormControl(''),
     location: new FormControl(''),
-    fullName: new FormControl(''),
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
     seniority: new FormControl(''),
     speciality: new FormControl(''),
     placeOfWork: new FormControl(''),
     email: new FormControl(''),
-    mobileNumber: new FormControl(''),
-    researchInterests: new FormControl(''),
-    previousSpeakerExperiences: new FormControl(''),
-    languages: new FormControl('')
+    professionalNumber: new FormControl(''),
+    cellPhoneNumber: new FormControl(''),
+    password: new FormControl(''),
+    newPassword: new FormControl(''),
   });
 
   constructor() { }

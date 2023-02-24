@@ -1,95 +1,139 @@
 <div class="center">
-    <div class="card p-3">
-        <div class="card-body">
-            <div class="wrapper">
-                <h3 class="card-title">Create your profile</h3>
-            </div>
-            <div class="" style="float: right;" >
-                <button type="button" class=" btn btn-success">Close</button>
-            </div>
+  <div class="card p-3">
+    <!--        <div class="card-body">-->
+    <!--            <div class="wrapper">-->
+    <!--                <h3 class="card-title">Create your profile</h3>-->
+    <!--            </div>-->
+    <!--            <div class="" style="float: right;" >-->
+    <!--                <button type="button" class="btn btn-success">Close</button>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <div>
+      <form [formGroup]="profileForm" (ngSubmit)="createProfile()">
+        <div class="form-group" style="margin: 10px 20px 20px 20px">
+          <label for="location">Location</label>
+          <select class="form-control form-select" id="location" formControlName="location">
+            <option>...</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin: 10px 20px 20px 20px">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" id="title" formControlName="title">
+        </div>
+        <div class="form-group" style="margin: 10px 20px 20px 20px">
+          <label for="formGroupExampleInput">Fist name</label>
+          <input type="text" class="form-control" id="firstName" formControlName="firstName">
+        </div>
+        <div class="form-group" style="margin: 10px 20px 20px 20px">
+          <label for="formGroupExampleInput">Last name</label>
+          <input type="text" class="form-control" id="lastName" formControlName="lastName">
+        </div>
+        <div class="form-group" style="margin: 10px 20px 20px 20px;">
+          <label for="placeOfWork">Place of work</label>
+          <select class="form-control form-select" id="placeOfWork" formControlName="placeOfWork">
+            <option>...</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin: 10px 20px 20px 20px;">
+          <label for="seniority">Seniority</label>
+          <select class="form-control form-select" id="seniority" formControlName="seniority">
+            <option>...</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin: 10px 20px 20px 20px;">
+          <label for="speciality">Speciality</label>
+          <select class="form-control form-select" id="speciality" formControlName="speciality">
+            <option>...</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group wrapper">
+          <label for="formGroupExampleInput">Professional Number</label>
+          <input type="number" class="form-control" id="professionalNumber" formControlName="professionalNumber">
+        </div>
+        <div class="form-group wrapper">
+          <label for="formGroupExampleInput">Cell phone Number</label>
+          <input type="number" class="form-control" id="cellPhoneNumber" formControlName="cellPhoneNumber">
+        </div>
+        <div class="form-group" style="margin: 10px 20px 20px 20px;">
+          <label for="formGroupExampleInput">Email Address</label>
+          <p>(please use your email associated with your Takeda ID if you have one) </p>
+          <input type="email" class="form-control" id="email" formControlName="email">
+        </div>
+        <div class="form-check" style="margin: 1rem">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            My email address is a Takeda ID
+          </label>
+        </div>
+        <div class="form-group input-group mb-3" style="margin: 10px 20px 20px 20px;width:93%">
+          <input [attr.type]="showPassword ? 'text' : 'password' " placeholder="Create new Password"
+            class="form-control" id="formGroupExampleInput" formControlName="password">
+          <span class="input-group-text" id="basic-addon1">
+            <i *ngIf="!showPassword" class="bi bi-eye" (click)="showPassword = !showPassword" aria-hidden="true"></i>
+            <i *ngIf="showPassword" class="bi bi-eye-slash" (click)="showPassword = !showPassword"
+              aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="form-group input-group mb-3" style="margin: 10px 20px 20px 20px;width:93%">
+          <input [attr.type]="showConfirmPassword ? 'text' : 'password' " class="form-control"
+            placeholder="Confirm Password" formControlName="newPassword">
+          <span class="input-group-text" id="basic-addon2">
+            <i *ngIf="!showConfirmPassword" class="bi bi-eye" (click)="showConfirmPassword = !showConfirmPassword"
+              aria-hidden="true"></i>
+            <i *ngIf="showConfirmPassword" class="bi bi-eye-slash" (click)="showConfirmPassword = !showConfirmPassword"
+              aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="form-check" style="margin: 1rem">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            I confirm that I am a healthcare professional
+          </label>
+        </div>
+        <div style="margin: 10px 20px 20px 20px;">
+          <p>Please read through our terms and conditions and privacy notes</p>
+        </div>
+        <div class="form-check" style="margin: 1rem">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            I agree with the Terms and Conditions
+          </label>
+        </div>
+        <div class="form-check" style="margin: 1rem">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            I agree with the Privacy Notice
+          </label>
+        </div>
+        <div class="form-check" style="margin: 1rem">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            I give consent to share my calendar
+          </label>
         </div>
         <div>
-            <form [formGroup]="profileForm" (ngSubmit)="createProfile()">
-                <div class="form-group wrapper">
-                    <label for="exampleFormControlSelect1">Title</label>
-                  <input type="text" class="form-control" id="title" formControlName="title">
-                </div>
-                <div class="form-group wrapper">
-                    <label for="exampleFormControlSelect1">Location</label>
-                    <select class="form-control select-form" id="location" formControlName="location">
-                        <option>...</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group" style="margin: 10px 20px 20px 20px">
-                    <label for="formGroupExampleInput">Full name</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" formControlName="fullName">
-                </div>
-                <div class="form-group" style="margin: 10px 20px 20px 20px;">
-                    <label for="exampleFormControlSelect1">Seniority</label>
-                    <select class="form-control" id="exampleFormControlSelect1" formControlName="seniority">
-                        <option>...</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group" style="margin: 10px 20px 20px 20px;">
-                    <label for="exampleFormControlSelect1">Speciality</label>
-                    <select class="form-control" id="exampleFormControlSelect1" formControlName="speciality">
-                        <option>...</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group" style="margin: 10px 20px 20px 20px">
-                    <label for="formGroupExampleInput">Place of work</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" formControlName="placeOfWork">
-                </div>
-                <div class="form-group wrapper">
-                    <label for="formGroupExampleInput">Email Address</label>
-                    <input type="email" class="form-control" id="formGroupExampleInput" formControlName="email">
-                </div>
-                <div class="form-group wrapper">
-                    <label for="formGroupExampleInput">Mobile Number</label>
-                    <input type="number" class="form-control" id="formGroupExampleInput" formControlName="mobileNumber">
-                </div>
-                <div class="form-group" style="margin: 10px 20px 20px 20px">
-                    <label for="formGroupExampleInput">Research interests</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput"
-                        formControlName="researchInterests">
-                </div>
-                <div class="form-group" style="margin: 10px 20px 20px 20px">
-                    <label for="formGroupExampleInput">Previous speaker experiences</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput"
-                        formControlName="previousSpeakerExperiences">
-                </div>
-                <div class="form-group" style="margin: 10px 20px 20px 20px">
-                    <label for="formGroupExampleInput">Languages</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" formControlName="languages">
-                </div>
-                <div class="wrapper">
-                    <button type="button" class="btn btn-light">Upload Photo</button>
-                </div>
-                <div class="wrapper">
-                    <button type="button" class="btn btn-light">Upload Biography</button>
-                </div>
-                <div class="wrapper">
-                    <button type="button" class="btn btn-light">Upload CV</button>
-                </div>
-                <div>
-                    <button type="submit" class="btn btn-primary" style="width: 90%;margin: 20px;">
-                        Create Profile
-                    </button>
-                </div>
-
-            </form>
+          <button type="submit" class="btn btn-success" style="width:100%">
+            Register your account
+          </button>
         </div>
+
+      </form>
     </div>
+  </div>
 </div>
