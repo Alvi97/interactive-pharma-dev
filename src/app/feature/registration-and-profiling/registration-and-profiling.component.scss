@@ -11,6 +11,10 @@
     margin: 20px;
 }
 
+
+    
+
+
 .center {
     display: flex;
     justify-content: center;
@@ -32,4 +36,13 @@
 .btn-success:active,
 .btn-success:visited {
     background-color: #4b9382 !important;
+    height: 30px!important;
+    width: 74px!important;
+    border-radius:6px!important;
+
+
+}
+.close-btn{
+    height: 30px !important;
+    width: 74px !important;
 }

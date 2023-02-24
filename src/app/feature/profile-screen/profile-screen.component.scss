@@ -1,0 +1,170 @@
+.card {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+  width: fit-content;
+}
+.mat-mdc-text-field-wrapper {
+  height: 47px !important;
+}
+.mat-mdc-form-field-flex {
+  height: 39px !important;
+}
+.card-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #1d3158;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1d3158;
+}
+
+.wrapper {
+  display: inline-block;
+  margin: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.select-form {
+  width: 210px !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background: #1d3158b2;
+  border: #1d3158b2;
+}
+
+.group-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #1d3158;
+}
+
+.btn-light {
+  width: 122px;
+  border-radius: 6px;
+  margin: 10px 10px 10px 10px;
+  background-color: #66beaa;
+}
+
+.bio-subtitle {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.form-group {
+  margin: 10px 20px 20px 20px;
+}
+
+.upload {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.button-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #66beaa;
+  border-color: #66beaa;
+  height: 31px !important;
+  width: 75px !important;
+  padding: unset;
+  border-radius: 6px !important;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+@media (max-width: 400px) {
+  .close-btn {
+    float: left !important;
+  }
+  .btn-light {
+    width: 100px;
+  }
+  .group-button {
+    font-size: 11px;
+  }
+}
+
+textarea {
+  height: 413px;
+}
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+}
+
+.confirm-btn {
+  height: 46px;
+  width: 100%;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+#uploadBtn{
+  margin-left: -70px!important;
+}
+.fileUpload input.upload {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+
+::ng-deep .country-select {
+  .mat-mdc-form-field {
+    width: 100%;
+  }
+  .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-bottom: 8px !important;
+    padding-top: 8px !important;
+   
+  }
+
+  .mat-mdc-text-field-wrapper, .mat-mdc-text-field-wrapper, .mat-mdc-form-field-flex {
+    height: 38px !important;
+   
+  }
+  .mat-mdc-form-field-subscript-wrapper {
+    display: none;
+    
+  }
+}

@@ -23,6 +23,10 @@ const routes: Routes = [
     // canActivate: [ AuthGuard ],
   },
   {
+    path: 'complete-profile',
+    loadChildren: () => import('./feature/profile-screen/profile-screen.module').then(m => m.ProfileScreenModule),
+  },
+  {
     path: '**', pathMatch: 'full', redirectTo: ''
   }
 ];
