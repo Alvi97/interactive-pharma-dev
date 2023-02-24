@@ -1,0 +1,53 @@
+.img-fluid {
+  height: 40px;
+  width: 40px;
+}
+
+.sticky-position {
+  margin-top: -75px;
+}
+
+.card-title {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1d3158;
+}
+
+.card-body {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.card {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.meeting-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #1d3158;
+  margin: unset;
+}
+
+.view-btn {
+  height: 32px;
+  width: 95px;
+  background-color: #66beaa;
+  border: #66beaa;
+}
+hr{
+  border: 2px solid rgba(0, 0, 0, 0.2);;
+}

@@ -1,0 +1,81 @@
+.container {
+  margin-top: 30px;
+  height: 504px;
+  width: 520px;
+  border-radius: 3px;
+}
+.card {
+  border-radius: 8px;
+  background: #fff;
+   cursor: pointer;
+}
+
+@media (max-width: 570px) {
+  .container{
+    width: 100%;
+}
+}
+.form {
+  padding-top: 20%;
+}
+
+.text {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.text-login{
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-top: -25px;
+}
+.register-btn {
+  height: 32px;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 95px;
+  justify-content: center;
+  background: #66beaa;
+  border: #66beaa;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.login-btn {
+  height: 32px;
+  width: 95px;
+  justify-content: center;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  background: #66beaa;
+  border: #66beaa;
+}
+
+.form-group {
+  width: 100%;
+}
+
+label {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1d3158;
+}
