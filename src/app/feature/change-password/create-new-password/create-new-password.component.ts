@@ -6,22 +6,22 @@ import { FormGroup, FormControl } from '@angular/forms';
   templateUrl: './create-new-password.component.html',
   styleUrls: ['./create-new-password.component.scss']
 })
-export class CreateNewPasswordComponent implements OnInit{
-public successMessage: boolean = false;
-public showPassword: boolean = false;
-public showConfirmPassword: boolean = false;
+export class CreateNewPasswordComponent implements OnInit {
+  public successMessage: boolean = false;
+  public showPassword: boolean = false;
+  public showConfirmPassword: boolean = false;
 
   newPasswordForm = new FormGroup({
     password: new FormControl(''),
     newPassword: new FormControl(''),
   });
-   changePassword() {
-      console.log(this.newPasswordForm.value);
-      this.successMessage = true;
-    }
-      constructor() { }
+  changePassword() {
+    console.log(this.newPasswordForm.value);
+    this.successMessage = true;
+  }
+  constructor() { }
 
-      ngOnInit() {
+  ngOnInit() {
 
-      }
+  }
 }
