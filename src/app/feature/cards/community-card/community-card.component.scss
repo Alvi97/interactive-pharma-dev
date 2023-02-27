@@ -1,13 +1,16 @@
-.card {
-  height: 395px;
-  width: 400px;
-}
+// .card {
+//   height: 395px;
+//   width: 400px;
+// }
 
 .card-img {
   height: 78px;
   width: 101px;
 }
 
+.card-body{
+  height: 10rem;
+ }
 .card-title {
   font-family: "Helvetica";
   font-style: normal;
@@ -45,8 +48,8 @@
 }
 
 .gray-box {
-  height: 109px;
-  width: 368px;
+  // height: 109px;
+  // width: 368px;
   background: rgba(29, 49, 88, 0.2);
   font-family: 'Helvetica';
   font-style: normal;

@@ -1,7 +1,7 @@
-.card {
-  height: 395px;
-  width: 400px;
-}
+// .card {
+//   height: 395px;
+//   width: 400px;
+// }
 
 .card-title {
   font-family: "Helvetica";
@@ -12,14 +12,9 @@
   color: #000000;
 }
 
-.card-img-top {
-  width: 367px;
-  height: 125px;
-}
-
 .gray-btn {
   height: 32px;
-  width: 271px;
+  width: 100%;
   background: rgba(29, 49, 88, 0.2);
   border: rgba(29, 49, 88, 0.2);
   font-family: "Helvetica";
@@ -32,7 +27,7 @@
 
 .green-btn {
   height: 32px;
-  width: 102px;
+  width: 100%;
   background: #66beaa;
   border: #66beaa;
   font-family: 'Helvetica';
