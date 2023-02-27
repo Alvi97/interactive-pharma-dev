@@ -1,7 +1,7 @@
-<div class="position-relative mt-1 ms-5">
+<div class="position-relative mt-1 ms-5" id="sidenav-pos">
     <div class="sticky-position">
-        <div style="width: 256px">
-            <div class="card p-4 ">
+        <div >
+            <div class="card p-4 " style="width: 16rem">
                 <div class=" image d-flex flex-column justify-content-center align-items-center"> <img
                         src="https://i.imgur.com/wvxPV9S.png" class="img-fluid rounded-circle border  border-3"
                         style="width: 56px; height:56" />
@@ -18,7 +18,7 @@
         </div>
 
         <div class="flex-row card my-4 gap-3 align-items-center justify-content-center"
-            style="width: 256px; height: 84px;">
+            style="width: 16rem; height: 84px;">
             <div>
                 <p class="card-title meeting-title">MEETINGS </p>
                 <div class="">
@@ -29,34 +29,25 @@
 
             <div><button type="button" class="view-btn btn btn-success">View</button> </div>
         </div>
-        <div class="card card-text" style="width: 256px; ">
+        <div class="card card-text" style="width: 16rem; ">
             <div class="card-body">
-                <div class="card-title">INFORMATION</div>
-                <p class="">Clinical News.</p>
-                <p class="">Clinical News.</p>
-                <p class="">Clinical News.</p>
+                <div class="card-title pb-1">INFORMATION</div>
+                <p class="">Clinical News</p>
+                <p class="">Journal Watch</p>
+                <p class="">Training Materials</p>
             </div>
             <hr>
-            <div class="card-body">
+            <div class="card-body pb-1">
                 <div class="card-title">EDUCATION</div>
-                <p class="">Clinical News.</p>
-                <p class="">Clinical News.</p>
+                <p class="">Published Clinical Papers</p>
+                <p class="">Slide Decks</p>
                 <p class="card-text">Clinical News.</p>
             </div>
             <hr>
-            <div class="card-body">
+            <div class="card-body pb-1">
                 <div class="card-title">DIARY</div>
                 <div class="mb-2">Availability in:</div>
                 <div class="form-floating mb-3">
-                        <!-- <mat-form-field appearance="fill">
-                            <mat-label>Select month</mat-label>
-                            <mat-select [(value)]="selectedMonth">
-                              <mat-option>None</mat-option>
-                              <mat-option value="option1">Janury</mat-option>
-                              <mat-option value="option2">February </mat-option>
-                              <mat-option value="option3"> March</mat-option>
-                            </mat-select>
-                          </mat-form-field> -->
                     <mat-card class="demo-inline-calendar-card">
                         <mat-calendar [(selected)]="selected"></mat-calendar>
                     </mat-card>

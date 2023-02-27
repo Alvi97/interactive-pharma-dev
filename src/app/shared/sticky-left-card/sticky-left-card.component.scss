@@ -26,6 +26,7 @@
 }
 
 .card {
+  width: 15rem;
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 400;
@@ -63,10 +64,6 @@ button.example-custom-date-class {
   height: 40px;
 }
 
-// .mat-datepicker-content .mat-calendar {
-//   width: 219px!important;
-//   height: 245px!important;
-// }
 .demo-inline-calendar-card {
   width: 300px;
 }
@@ -74,5 +71,11 @@ button.example-custom-date-class {
   width: 222px;
 }
 
+}
 
+@media (max-width: 1000px) {
+  #sidenav-pos{
+      position: absolute;
+      margin-left: -25px;
+}
 }

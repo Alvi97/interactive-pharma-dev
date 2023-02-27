@@ -9,9 +9,9 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    // data:{
-    //   pageTitle:''
-    // },
+    data:{
+      pageTitle:'Home'
+    },
     pathMatch: 'full'
   }
 ];
