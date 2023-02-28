@@ -27,6 +27,10 @@ const routes: Routes = [
     loadChildren: () => import('./feature/profile-screen/profile-screen.module').then(m => m.ProfileScreenModule),
   },
   {
+      path: 'forgot-password',
+      loadChildren: () => import('./feature/change-password/change-password.module').then(m => m.ChangePasswordModule),
+    },
+  {
     path: '**', pathMatch: 'full', redirectTo: ''
   }
 ];
