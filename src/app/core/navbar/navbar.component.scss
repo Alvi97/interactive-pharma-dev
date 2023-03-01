@@ -32,8 +32,11 @@
 }
 
 .navbar-toggler {
+  padding: 2px;
   background-color: white;
+
 }
+
 .navbar-brand {
   color: white;
 }
@@ -62,4 +65,16 @@
 
 .btn-sm {
   width: fit-content;
+}
+
+@media (max-width: 470px) {
+.container-fluid{
+  padding: unset!important;
+}
+  .title {
+    font-size: 23px !important;
+  }
+  .subtitle {
+    font-size: 16px !important;
+  }
 }
